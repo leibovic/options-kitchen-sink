@@ -3,11 +3,11 @@
 <vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
       xmlns:html="http://www.w3.org/1999/xhtml">
 
-  <setting pref="hubkitchensink.bool.desc" type="bool" title="boolean">
+  <setting pref="kitchensink.bool" type="bool" title="boolean">
     This is a boolean setting
   </setting>
 
-  <setting pref="hubkitchensink.boolint.desc" title="boolint" type="boolint" on="0" off="2">
+  <setting pref="kitchensink.boolint" title="boolint" type="boolint" on="0" off="2">
     This is a boolint setting
   </setting>
 
@@ -16,11 +16,11 @@
     <button label="button"/>
   </setting>
 
-  <setting pref="hubkitchensink.string" type="string" title="string">
+  <setting pref="kitchensink.string" type="string" title="string">
     This is a string setting
   </setting>
 
-  <setting pref="hubkitchensink.password" type="string" title="password" inputtype="password">
+  <setting pref="kitchensink.password" type="string" title="password" inputtype="password">
    This is a password setting
   </setting>
 
