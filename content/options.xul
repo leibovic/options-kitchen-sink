@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      xmlns:html="http://www.w3.org/1999/xhtml">
+
+  <setting pref="hubkitchensink.bool.desc" type="bool" title="boolean">
+    This is a boolean setting
+  </setting>
+
+  <setting pref="hubkitchensink.boolint.desc" title="boolint" type="boolint" on="0" off="2">
+    This is a boolint setting
+  </setting>
+
+  <setting title="control" type="control">
+    This is a control setting with a button
+    <button label="button"/>
+  </setting>
+
+  <setting pref="hubkitchensink.string" type="string" title="string">
+    This is a string setting
+  </setting>
+
+  <setting pref="hubkitchensink.password" type="string" title="password" inputtype="password">
+   This is a password setting
+  </setting>
+
+  <setting title="menulist" type="menulist">
+    This is a menulist setting
+    <menulist>
+      <menupopup>
+        <menuitem value="value1" label="Value 1"/>
+        <menuitem value="value2" label="Value 2"/>
+        <menuitem value="value3" label="Value 3"/>
+      </menupopup>
+    </menulist>
+  </setting>
+</vbox>
