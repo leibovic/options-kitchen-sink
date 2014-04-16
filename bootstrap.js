@@ -26,23 +26,16 @@ function observe(doc, topic, id) {
     return;
   }
 
-  let setting = doc.getElementById("country-setting");
-  setting.setAttribute("title", Strings.GetStringFromName("country"));
-
-  let select = doc.getElementById("country-select");
-  for (let code in Countries) {
+  let select = doc.getElementById("select");
+  for (o of testOptions) {
     let option = doc.createElement("option");
-    option.value = code;
-    option.textContent = Countries[code].label;
+    option.value = o.value;
+    option.textContent = o.label;
     select.appendChild(option);
   }
 
-  select.value = getCountryCode();
-
   select.addEventListener("change", function() {
-    let newCountryCode = select.value;
-    Services.prefs.setCharPref(WCF_COUNTRY_CODE_PREF, newCountryCode);
-    HomeProvider.requestSync(DATASET_ID, refreshDataset);
+    Services.console.logStringMessage("*** test select value changed to: " + select.value);
   }, false);
 }
 

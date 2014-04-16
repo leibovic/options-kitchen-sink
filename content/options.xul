@@ -34,4 +34,10 @@
       </menupopup>
     </menulist>
   </setting>
+
+  <setting title="control w/ select" type="control">
+    This is a control setting with an html:select
+    <html:select id="select">
+    </html:select>
+  </setting>
 </vbox>
