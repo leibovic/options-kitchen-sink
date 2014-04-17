@@ -11,8 +11,6 @@
 
   <setting pref="kitchensink.password" type="string" title="Password" inputtype="password"/>
 
-  <setting pref="kitchensink.integer" type="integer" title="Integer"/>
-
   <setting title="Menulist" type="menulist">
     <menulist>
       <menupopup>
@@ -23,11 +21,11 @@
     </menulist>
   </setting>
 
-  <setting title="Control with button" type="control">
-    <button label="button"/>
+  <setting title="Button" type="control">
+    <button label="Action"/>
   </setting>
 
-  <setting title="Control with select" type="control">
+  <setting title="Select" type="control">
     <html:select id="select">
     </html:select>
   </setting>
