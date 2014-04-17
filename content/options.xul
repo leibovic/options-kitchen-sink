@@ -3,29 +3,17 @@
 <vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
       xmlns:html="http://www.w3.org/1999/xhtml">
 
-  <setting pref="kitchensink.bool" type="bool" title="boolean">
-    This is a boolean setting
-  </setting>
+  <setting pref="kitchensink.bool" type="bool" title="Boolean"/>
 
-  <setting pref="kitchensink.boolint" title="boolint" type="boolint" on="0" off="2">
-    This is a boolint setting
-  </setting>
+  <setting pref="kitchensink.boolint" title="Boolint" type="boolint" on="0" off="2"/>
 
-  <setting title="control" type="control">
-    This is a control setting with a button
-    <button label="button"/>
-  </setting>
+  <setting pref="kitchensink.string" type="string" title="String"/>
 
-  <setting pref="kitchensink.string" type="string" title="string">
-    This is a string setting
-  </setting>
+  <setting pref="kitchensink.password" type="string" title="Password" inputtype="password"/>
 
-  <setting pref="kitchensink.password" type="string" title="password" inputtype="password">
-   This is a password setting
-  </setting>
+  <setting pref="kitchensink.integer" type="integer" title="Integer"/>
 
-  <setting title="menulist" type="menulist">
-    This is a menulist setting
+  <setting title="Menulist" type="menulist">
     <menulist>
       <menupopup>
         <menuitem value="value1" label="Value 1"/>
@@ -35,8 +23,11 @@
     </menulist>
   </setting>
 
-  <setting title="control w/ select" type="control">
-    This is a control setting with an html:select
+  <setting title="Control with button" type="control">
+    <button label="button"/>
+  </setting>
+
+  <setting title="Control with select" type="control">
     <html:select id="select">
     </html:select>
   </setting>
