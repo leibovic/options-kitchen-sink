@@ -5,9 +5,18 @@
 
   <setting pref="kitchensink.bool" type="bool" title="Boolean"/>
 
+  <setting pref="kitchensink.bool" type="bool" title="Boolean">
+    With a description
+  </setting>
+
   <setting pref="kitchensink.boolint" title="Boolint" type="boolint" on="0" off="2"/>
 
   <setting pref="kitchensink.string" type="string" title="String"/>
+
+  <setting pref="kitchensink.string" type="string" title="String">
+    With a description
+  </setting>
+
 
   <setting pref="kitchensink.password" type="string" title="Password" inputtype="password"/>
 
@@ -21,11 +30,16 @@
     </menulist>
   </setting>
 
-  <setting title="Button" type="control">
+  <setting title="Control" type="control">
     <button label="Action"/>
   </setting>
 
-  <setting title="Select" type="control">
+  <setting title="Control" type="control">
+    With a description
+    <button label="Action"/>
+  </setting>
+
+  <setting title="Control" type="control">
     <html:select id="select">
     </html:select>
   </setting>
